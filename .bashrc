@@ -118,7 +118,7 @@ fi
 
 alias ls='ls -FGh1 --ignore=NTUSER* --ignore=ntuser*'
 
-PS1="\e[0;31m|\t|\e[m:/$(pwd | cut -f2,3 -d'/') λ. "
+PS1="\e[0;31m|\t|\e[m:\w λ. "
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 source /usr/share/autojump/autojump.bash
