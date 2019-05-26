@@ -89,15 +89,9 @@ function update_configs {
   cp "${dir}/.tmux.conf" "${HOME}/.tmux.conf"
   cp "${dir}/.inputrc" "${HOME}/.inputrc"
   cp "${dir}/.gitconfig_global" "${HOME}/.gitconfig"
+  cp "${dir}/.bashrc" "${HOME}/.bashrc"
 
-  echo "source /usr/share/autojump/autojump.bash" >> "${HOME}/.bashrc"
   chmod 0755 /usr/share/autojump/autojump.bash
-
-  echo """
-alias 'vim'='nvim'
-alias 'ff'='fuck'
-alias 'da'='direnv allow'
-  """ >> "${HOME}/.bashrc"
 }
 
 function cleanup {
